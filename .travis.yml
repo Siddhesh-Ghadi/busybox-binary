@@ -4,5 +4,5 @@ script:
   - busybox
   - sudo echo 'deb http://ftp.de.debian.org/debian buster main' >> /etc/apt/sources.list
   - sudo apt-get update --allow-insecure-repositories
-  - sudo apt-get install busybox --allow-insecure-repositories -y
+  - sudo apt-get install busybox -y
   - busybox
