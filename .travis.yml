@@ -1,6 +1,6 @@
-arch: s390x
+arch: ppc64le
 dist: bionic
 script: 
-  - wget https://busybox.net/downloads/binaries/1.31.0-defconfig-multiarch-musl/busybox-s390x
-  - chmod +x busybox-s390x
-  - ./busybox-s390x
+  - busybox
+  - sudo echo 'deb http://ftp.de.debian.org/debian buster main' >> /etc/apt/sources.list
+  - sudo apt update
