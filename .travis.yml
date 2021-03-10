@@ -1,0 +1,6 @@
+arch: s390x
+dist: bionic
+script: 
+  - wget https://busybox.net/downloads/binaries/1.31.0-defconfig-multiarch-musl/busybox-s390x
+  - chmod +x busybox-s390x
+  - ./busybox-s390x --version
