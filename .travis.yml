@@ -3,4 +3,5 @@ dist: bionic
 script: 
   - busybox
   - sudo echo 'deb http://ftp.de.debian.org/debian buster main' >> /etc/apt/sources.list
-  - sudo apt update
+  - sudo apt update --allow-unauthenticated
+  - sudo apt install busybox --allow-unauthenticated -y
